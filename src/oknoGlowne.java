@@ -8,7 +8,7 @@ public class oknoGlowne {
 		
 		Singleton2 b1=Singleton2.getInstance2();
 		Singleton2 b2=Singleton2.getInstance2();
-		System.out.print("\n"+b1+"\n"+b2);
+		System.out.print("\n"+b2+"\n"+b1);
 		
 		//Singleton a3= new Singleton();
 		//Singleton a4= new Singleton();
