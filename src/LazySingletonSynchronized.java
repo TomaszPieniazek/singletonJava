@@ -1,4 +1,6 @@
-public class LazySingletonSynchronized {
+import java.io.Serializable;
+
+public class LazySingletonSynchronized implements Serializable {
     private static LazySingletonSynchronized instance;
     private int number;
 
@@ -22,5 +24,9 @@ public class LazySingletonSynchronized {
 
     public void setNumber(int number) {
         this.number = number;
+    }
+
+    protected LazySingletonSynchronized readResolve() {
+        return getInstance();
     }
 }
