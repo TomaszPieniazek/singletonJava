@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class ThreadsCheck {
     public static void main(String[] args) throws InterruptedException {
@@ -20,7 +21,7 @@ public class ThreadsCheck {
             myThreadsLS[i].start();
         }
         */
-
+        
 
         //LAZY SINGLETON WITH DOUBLE CHECKING TEST
         Thread myThreadsLSDC[]=new Thread[size];
